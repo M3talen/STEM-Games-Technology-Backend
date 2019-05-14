@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "postgres": {
+      "username": "/",
+      "password": "/",
+      "database": "/",
+      "host": "/",
+      "port": "5543",
+      "dialect": "postgres"
+    },
+    "redis": {
+      "host": "/",
+      "port": "6363"
+    },
+    "logDNA": {
+      "key": "/"
+    },
+    "crypto": {
+      "key": "/"
+    },
+    "firstDay": "05/8/2019",
+    "OneDayFactor" : 1,
+    "TwoDayFactor": 1,
+    "factors": [0.05, 0.05, 0.05, 0.1, 0.1, 0.1, 0.1, 0.15, 0.15, 0.15]
+  }
+}

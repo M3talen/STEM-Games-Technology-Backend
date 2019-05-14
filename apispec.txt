@@ -1,0 +1,86 @@
+
+
+//Login 
+URL : /teams/login (POST)
+REQ : 
+{
+    "username":"abc",
+    "password":"ab"
+}
+RES : 
+{
+    "status":"True" ili "False",
+    "token":"taem_id hash"
+}
+
+//Actions
+URL : /action/move (POST)
+//NOTE: returns random dummy data, but checks token
+REQ 1 (get status): 
+{
+    "token":"team_id hash",
+}
+REQ 2 (move and get status): 
+{
+    "token":"team_id hash",
+    "action" : "left / ri...."
+}
+RES 1 (with task): 
+{
+    "actions":{
+      "up":"true",
+      "down":"false",
+      "left":"false",
+      "right":"true"
+    },
+    "points":"points"
+    "task" : {
+        "id":"id, 
+        "url":"url"
+    },
+    "display_metadata": "tekst" of map_blocks
+}
+RES 2 (without task): 
+{
+    "actions":{
+      "up":"true",
+      "down":"false",
+      "left":"false",
+      "right":"true"
+    },
+    "points":"points"
+    "task" : null,
+    "display_metadata": "tekst"
+}
+RES 3 (wrong action):
+{
+    :error":"true",
+    "message": "Action not allowed"
+}
+
+//attack api
+REQ :
+{
+    "team_id" : "token",
+    "problem_id" : "12"
+    "case_id" : "23",
+    "submission" : "rjesenje 0 1 02"
+}
+
+RES : 
+{
+    "solved" : "true \ false", // for test case, not the problem
+    "healthbar" : [0 1 0 1 1 1 0 0]
+    "points" : current_points
+}
+
+
+
+//problem metadata za problem : 
+{
+	"points": "10",
+	"points_text": "Consider this a gift",
+	"hardness": "Easy",
+	"hardness_text": "C'mon that should be simple",
+	"file": "keys"
+}

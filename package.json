@@ -1,0 +1,42 @@
+{
+  "name": "node-sequelize",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "tstart": "cross-env NODE_ENV=tulek_dev npm start",
+    "production": "cross-env NODE_ENV=production npm start"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "clipboardy": "^2.0.0",
+    "cookie-parser": "~1.4.3",
+    "cookies": "^0.7.3",
+    "date-diff": "^0.2.1",
+    "ddos": "^0.2.1",
+    "debug": "~2.6.9",
+    "ejs": "^2.5.9",
+    "express": "^4.16.4",
+    "greenlock-express": "^2.7.6",
+    "hashids": "^1.2.2",
+    "http-errors": "~1.6.2",
+    "http-proxy": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "kue": "^0.11.6",
+    "line-reader": "^0.4.0",
+    "lodash": "^4.17.11",
+    "logdna": "^3.0.1",
+    "markdown-it": "^8.4.2",
+    "markdown-it-div": "^1.1.0",
+    "morgan": "~1.9.0",
+    "nl2br": "0.0.3",
+    "nodejs-base64": "^1.0.3",
+    "nodemon": "^1.18.11",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "prismjs": "^1.16.0",
+    "redis": "^2.8.0",
+    "sequelize": "^5.2.13",
+    "socket.io": "^2.2.0"
+  }
+}
